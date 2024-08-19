@@ -33,7 +33,7 @@ const data = [
     },
     {
         category: "Sports Day",
-        title: "Kids Paradise Sports Day 2022",
+        title: "Kids Paradise Annual Sports Day",
         src: "/sports.jpg",
     },
     {

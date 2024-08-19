@@ -89,11 +89,12 @@ const Locate = () => (
   <div className="relative w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
     <iframe
       className="absolute inset-0 w-full h-full rounded-lg border-0"
-      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6,%20Jln%20Perjiranan%204/1+(Kids%20Paradise)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=No%204-01,6,%2001,%20Jln%20Perjiranan%204/1,%20Bandar%20Dato%20Onn,%2081100%20Johor%20Bahru,%20Johor&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed&ll=1.552318,103.780369"
       allowFullScreen=""
       loading="lazy"
     ></iframe>
   </div>
+
 );
 
 const About = () => (

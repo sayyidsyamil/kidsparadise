@@ -34,7 +34,7 @@ const testimonials = [
   {
     quote:
       "“Best Islamic-Mandarin preschool in JB”",
-    name: "Puan Bae Yun",
+    name: "Puan Nurrulakhira",
   },
   {
     quote:

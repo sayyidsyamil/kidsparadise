@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-import { FaWhatsapp, FaEnvelope, FaInstagram, FaFacebook,FaUserTie, FaUserGraduate } from 'react-icons/fa'; // Import the icons you need
+import { FaWhatsapp, FaEnvelope, FaInstagram, FaFacebook, FaUserTie, FaUserGraduate } from 'react-icons/fa'; // Import the icons you need
 
 
 import React from "react";
@@ -50,12 +50,12 @@ const Leadership = () => (
   <div className="w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
     <p className="flex items-center mb-4">
       <FaUserTie className="text-2xl text-black mr-4" />
-      <span className="font-semibold text-gray-700">Director:</span> 
+      <span className="font-semibold text-gray-700">Director:</span>
       <span className="ml-2">Mr. Azhar Amirruddin</span>
     </p>
     <p className="flex items-center">
       <FaUserGraduate className="text-2xl text-black mr-4" />
-      <span className="font-semibold text-gray-700">Principal:</span> 
+      <span className="font-semibold text-gray-700">Principal:</span>
       <span className="ml-2">Mrs. Nur Ariysha Chong</span>
     </p>
   </div>
@@ -64,46 +64,46 @@ const Contact = () => (
   <div className="w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
     <p className="flex items-center mb-2">
       <FaWhatsapp className="text-2xl text-black mr-4" />
-      <span className="font-semibold text-gray-700">Phone:</span> 
+      <span className="font-semibold text-gray-700">Phone:</span>
       <span className="ml-2">+6018-7895960</span>
     </p>
     <p className="flex items-center mb-2">
       <FaEnvelope className="text-2xl text-black mr-4" />
-      <span className="font-semibold text-gray-700">Email:</span> 
+      <span className="font-semibold text-gray-700">Email:</span>
       <a href="mailto:kidsparadisecc@gmail.com" className="ml-2 text-blue-500 hover:underline">kidsparadisecc@gmail.com</a>
     </p>
     <p className="flex items-center mb-2">
       <FaInstagram className="text-2xl text-black mr-4" />
-      <span className="font-semibold text-gray-700">Instagram:</span> 
+      <span className="font-semibold text-gray-700">Instagram:</span>
       <a href="https://instagram.com/kidsparadisejhb" target="_blank" rel="noopener noreferrer" className="ml-2 text-blue-500 hover:underline">@kidsparadisejhb</a>
     </p>
     <p className="flex items-center">
       <FaFacebook className="text-2xl text-black mr-4" />
-      <span className="font-semibold text-gray-700">Facebook:</span> 
+      <span className="font-semibold text-gray-700">Facebook:</span>
       <span className="ml-2">Kids Paradise</span>
     </p>
   </div>
 );
 
 const Locate = () => (
-<div className="relative w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
-  <iframe
-    className="absolute inset-0 w-full h-full rounded-lg border-0"
-    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6,%20Jln%20Perjiranan%204/1+(Kids%20Paradise)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-    allowFullScreen=""
-    loading="lazy"
-  ></iframe>
-</div>
+  <div className="relative w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
+    <iframe
+      className="absolute inset-0 w-full h-full rounded-lg border-0"
+      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6,%20Jln%20Perjiranan%204/1+(Kids%20Paradise)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
 );
 
 const About = () => (
-  <div className="relative w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
-    <Image 
-      src="/about.webp" 
-      alt="Islamic Mandarin Preschool" 
+  <div className="relative w-full p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50 bg-black/50 z-0 inset-0">
+    <Image
+      src="/about.jpg"
+      alt="Islamic Mandarin Preschool"
       layout="fill" // Makes the image fill the container
       objectFit="cover" // Ensures the image covers the entire container
-      objectPosition="top" // Aligns the image content to the top
+      // objectPosition="top" // Aligns the image content to the top
       className="rounded-lg" // Keeps the rounded corners
     />
   </div>
@@ -128,20 +128,20 @@ const About = () => (
 
 const Mission = () => (
   <div className=" w-full  p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
-      <p>Our mission is to nurture young minds in a safe, caring and culturally enriching environment where Islamic values and Mandarin language skills are developed</p>
+    <p>Our mission is to nurture young minds in a safe, caring and culturally enriching environment where Islamic values and Mandarin language skills are developed</p>
   </div>
 );
 
 const Vision = () => (
   <div className=" w-full  p-4 min-h-[6rem] h-full rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
-      <p>Our vision is to cultivate a generation of compassionate, multilingual,and confident young learners who are grounded in Islamic values, fluent Mandarin and equipped to thrive in a diverse and interconnected world.</p>
+    <p>Our vision is to cultivate a generation of compassionate, multilingual,and confident young learners who are grounded in Islamic values, fluent Mandarin and equipped to thrive in a diverse and interconnected world.</p>
   </div>
 );
 
 const Curriculum = () => (
   <div className=" w-full p-4 min-h-[6rem] h-full  rounded-xl bg-gradient-to-br from-orange-100 to-orange-50">
-<p>Our curriculum offers a well-rounded education, blending language instruction in Bahasa Malaysia, English, and Mandarin with key subjects like Mathematics, Science, and STEM. We introduce young learners to Computer Science, nurture creativity through Art and Craft, and promote health through physical activities. We also integrate moral teachings to support character development, ensuring a holistic approach to early education.</p>
-</div>
+    <p>Our curriculum offers a well-rounded education, blending language instruction in Bahasa Malaysia, English, and Mandarin with key subjects like Mathematics, Science, and STEM. We introduce young learners to Computer Science, nurture creativity through Art and Craft, and promote health through physical activities. We also integrate moral teachings to support character development, ensuring a holistic approach to early education.</p>
+  </div>
 );
 
 

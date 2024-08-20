@@ -64,7 +64,8 @@ export function Programs() {
           {[
             { title: "Half Day (半天)", time: "9:00 AM - 1:30 PM", description: "No evening class" },
             { title: "Half Day Extend (加强班)", time: "9:00 AM - 4:15 PM", description: "Includes evening class" },
-            { title: "Full Day (整天)", time: "9:00 AM - 6:30 PM", description: "Includes evening class" },
+            { title: "Full Day (整天)", time: "7:00 AM - 6:30 PM", description: "Includes evening class" },
+            
           ].map((program, index) => (
             <div
               key={index}

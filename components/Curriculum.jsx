@@ -22,7 +22,7 @@ import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/component
 export function Curriculum() {
   return (
     <div className="w-full max-w-screen mx-auto px-[5%] mt-10">
-      <h1 className="text-3xl font-bold my-2 text-center">Curriculum Overview</h1>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold my-2 text-center">Curriculum Overview</h1>
       <Collapsible>
         <div>
           <CollapsibleTrigger

@@ -14,7 +14,7 @@ import { FaWaze, FaGoogle } from 'react-icons/fa';
 export const Location = () => {
     return (
         <div className='pt-10'>
-            <h1 className="text-3xl font-bold my-2 text-center">Locate Us</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold my-2 text-center">Locate Us</h1>
             <h3 className="text-sm  my-2 text-center text-orange-600">No 4-01 & No 6-01, Jalan Perjiranan 4/1, Bandar Dato Onn, 81100, Johor Bahru, Johor</h3>
             <div className="relative w-full p-4 min-h-[6rem] rounded-xl bg-gradient-to-br from-orange-100 to-orange-50" style={{ height: '50vh' }}>
                 <iframe
@@ -34,7 +34,7 @@ export const Location = () => {
                     rel="noopener noreferrer"
                     className="rounded-full shadow-lg transition-transform transform hover:scale-110"
                 >
-                    <FaWaze className="w-10 h-10" style={{ color: '#000000' }} />
+                    <FaWaze className="w-8 h-8" style={{ color: '#000000' }} />
                 </a>
 
                 <a
@@ -43,7 +43,7 @@ export const Location = () => {
                     rel="noopener noreferrer"
                     className="rounded-full shadow-lg transition-transform transform hover:scale-110"
                 >
-                    <FaGoogle className="w-10 h-10" style={{ color: '#000000' }} />
+                    <FaGoogle className="w-8 h-8" style={{ color: '#000000' }} />
                 </a>
             </div>
 

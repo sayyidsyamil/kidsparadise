@@ -66,7 +66,7 @@ export function Programs() {
         {/* Program Cards */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {[
-            { title: "Half Day (半天)", time: "9:00 AM - 1:30 PM", description: "" },
+            { title: "Half Day (半天)", time: "9:00 AM - 1:30 PM", description: "   " },
             { title: "Half Day Extend (加强班)", time: "9:00 AM - 4:15 PM", description: "Includes evening class" },
             { title: "Full Day (整天)", time: "9:00 AM - 6:30 PM", description: "Includes evening class" },
           ].map((program, index) => (

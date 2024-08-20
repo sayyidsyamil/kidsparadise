@@ -24,17 +24,15 @@ export const Location = () => {
                     loading="lazy"
                 ></iframe>
             </div>
-            <div className='w-full flex items-center justify-end space-x-2 bg-transparent'>
-                <p className='font-mono text-4xl text-black'>
-                    --------------------&gt;
-                </p>
+            <div className='w-full flex items-center justify-end space-x-1 bg-transparent'>
+            
                 <a
                     href="https://waze.com/ul/hw23bbs3q6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full shadow-lg transition-transform transform hover:scale-110"
                 >
-                    <FaWaze className="w-8 h-8" style={{ color: '#000000' }} />
+                    <FaWaze className="w-8 h-8 bg-orange-600 text-white rounded-md p-1" />
                 </a>
 
                 <a
@@ -43,7 +41,7 @@ export const Location = () => {
                     rel="noopener noreferrer"
                     className="rounded-full shadow-lg transition-transform transform hover:scale-110"
                 >
-                    <FaGoogle className="w-8 h-8" style={{ color: '#000000' }} />
+                    <FaGoogle className="w-8 h-8  bg-orange-600 text-white rounded-md p-1" />
                 </a>
             </div>
 

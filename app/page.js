@@ -85,12 +85,12 @@ export default function Home() {
       </nav>
 
       {/* Home Section */}
-      <section id="home" className="sm:pt-0 pt-10">
+      <section id="home" >
         <LandingPage />
       </section>
 
-      <section id="info" className="py-20">
-        <div className="text-4xl mx-auto font-normal gap-2 text-black flex flex-col sm:flex-row items-center justify-center mb-8">
+      <section id="info" >
+        <div className="text-4xl pb-24 mx-auto font-normal gap-2 text-black flex flex-col sm:flex-row items-center justify-center ">
           {["Make", "Your", "Child", "Fluent", "in"].map((word, index) => (
             <motion.div
               key={index}

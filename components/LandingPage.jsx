@@ -41,7 +41,7 @@ export function LandingPage() {
                     The best Islamic Mandarin preschool you can find.
                   </p>
                   <Link
-                    href="#"
+                    href="https://api.whatsapp.com/send?phone=60187895960&text"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-orange-600 px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-orange-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}>
                     Enroll Now

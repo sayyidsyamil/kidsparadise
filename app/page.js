@@ -12,6 +12,8 @@ import { LandingPage } from "@/components/LandingPage";
 import { InfoSection } from "@/components/InfoSection";
 import { Curriculum } from "@/components/Curriculum";
 import { Location } from "@/components/Location";
+import { Programs } from "@/components/programs";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const words = ["Bahasa", "English", "Mandarin"];
 
@@ -66,7 +68,7 @@ export default function Home() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <span className="text-white font-semibold hidden sm:block ">By</span>
+          <span className="text-white font-semibold hidden sm:block">By</span>
           <a
             href="https://kidsparadise.vercel.app"
             target="_self"
@@ -85,12 +87,12 @@ export default function Home() {
       </nav>
 
       {/* Home Section */}
-      <section id="home" >
+      <section id="home">
         <LandingPage />
       </section>
 
-      <section id="info" >
-        <div className="text-4xl pb-24 mx-auto font-normal gap-2 text-black flex flex-col sm:flex-row items-center justify-center ">
+      <section id="info">
+        <div className="text-4xl pb-24 mx-auto font-normal gap-2 text-black flex flex-col sm:flex-row items-center justify-center">
           {["Make", "Your", "Child", "Fluent", "in"].map((word, index) => (
             <motion.div
               key={index}
@@ -120,15 +122,12 @@ export default function Home() {
             <FlipWords words={words} className="text-orange-500" />
           </motion.div>
         </div>
-          
-        {/* <BentoGridDemo /> */}
       </section>
 
       <InfoSection />
-
-      <Curriculum/>
-
-      <Location/>
+      <Curriculum />
+      <Location />
+      <Programs />
 
       {/* Events Section */}
       <section id="events" className="py-10">
@@ -142,24 +141,14 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      {/* Fixed WhatsApp button */}
+      {/* Fixed WhatsApp Button */}
       <a
-        href="https://api.whatsapp.com/send?phone=60187895960&text" // Replace 'yourphonenumber' with your actual WhatsApp number in international format
+        href="https://api.whatsapp.com/send?phone=60187895960&text"
         target="_blank"
         rel="noopener noreferrer"
-        className=" z-[10000] fixed bottom-4 right-4 p-3 bg-orange-600 rounded-full shadow-lg transition-transform transform hover:scale-110"
+        className="z-[10000] fixed bottom-4 right-4 p-3 bg-orange-600 rounded-full shadow-lg transition-transform transform hover:scale-110"
       >
-        <svg
-          className="w-12 h-12 text-white"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            d="M16.1 15.1c-0.6-0.4-1.1-0.8-1.7-1.1-0.2-0.2-0.4-0.2-0.6-0.1-0.3 0.2-0.6 0.3-0.9 0.5-0.4 0.1-0.8 0.2-1.1 0.3-0.3 0.1-0.5 0.2-0.8 0.2-0.5 0-1-0.1-1.5-0.3-0.4-0.1-0.8-0.3-1.1-0.6-0.4-0.3-0.8-0.7-1.1-1.1-0.2-0.2-0.2-0.4-0.1-0.6 0.2-0.3 0.4-0.6 0.6-0.9 0.2-0.3 0.4-0.7 0.6-1 0.1-0.3 0.2-0.7 0.3-1 0.2-0.5 0.3-1 0.5-1.5 0.2-0.4 0.4-0.7 0.7-1 0.2-0.3 0.4-0.6 0.7-0.8 0.2-0.2 0.5-0.4 0.8-0.5 0.5-0.2 1-0.3 1.5-0.3 0.8 0 1.6 0.3 2.3 0.8 0.6 0.4 1.2 0.9 1.6 1.5 0.3 0.3 0.5 0.7 0.7 1.1 0.3 0.5 0.5 1 0.5 1.5-0.1 0.3-0.1 0.7-0.2 1.1-0.1 0.4-0.3 0.8-0.5 1.2-0.2 0.3-0.5 0.6-0.8 0.9-0.3 0.2-0.7 0.4-1.1 0.6-0.4 0.1-0.8 0.2-1.2 0.3-0.4 0.1-0.7 0.3-1.1 0.3-0.6 0-1.3-0.2-1.9-0.5z"
-          />
-        </svg>
+        <FaWhatsapp className="w-12 h-12 text-white" />
       </a>
     </main>
   );

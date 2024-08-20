@@ -19,18 +19,49 @@ export function AppleCardsCarouselDemo() {
 }
 
 
-
 const data = [
+    // Celebrations
+    {
+        category: "Hari Raya",
+        title: "Hari Raya Celebration",
+        src: "/raya.jpeg",
+    },
+    {
+        category: "Chinese New Year",
+        title: "Chinese New Year Celebration",
+        src: "/cny.jpeg",
+    },
+
+    // School Trips
     {
         category: "Mosque Visit",
-        title: "Mosque Visit Day at Kids Paradise",
+        title: "School Trip: Mosque Visit Day",
         src: "/mosque.jpeg",
     },
     {
-        category: "Hari Raya Celebration",
-        title: "Hari Raya Celebration Day at Kids Paradise",
-        src: "/raya.jpeg",
+        category: "Fruit Farm",
+        title: "School Trip: Fruit Farm Tour",
+        src: "/farm.jpg",
     },
+    {
+        category: "Indoor Playground",
+        title: "School Trip: Indoor Playground",
+        src: "/playground.jpg",
+    },
+
+    // Educational Activities
+    {
+        category: "Eye Screening",
+        title: "Eye Screening Day at Kids Paradise",
+        src: "/eye.jpg",
+    },
+    {
+        category: "Class Activities",
+        title: "Sensory Class Activities at Kids Paradise",
+        src: "/class.jpg",
+    },
+
+    // Sports and Play
     {
         category: "Sports Day",
         title: "Kids Paradise Annual Sports Day",
@@ -41,12 +72,5 @@ const data = [
         title: "Messy Play Day at Kids Paradise",
         src: "/messy.jpeg",
     },
-    {
-        category: "Eye Screening",
-        title: "Eye Screening Day at Kids Paradise",
-        src: "/eye.jpg",
-    },
-
-
-
 ];
+

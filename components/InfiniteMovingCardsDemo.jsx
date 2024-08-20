@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased b items-center justify-center bg-[#E6B57B] relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased b items-center justify-center  relative overflow-hidden">
       <h2 className="text-4xl font-bold text-black mb-4">Testimonials</h2>
       <InfiniteMovingCards
         items={testimonials}

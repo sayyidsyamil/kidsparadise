@@ -8,6 +8,10 @@ import { TypewriterEffectSmoothDemo } from "@/components/TypewriterEffectSmoothD
 import { ContactForm } from "@/components/ContactForm";
 import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
 import { motion } from "framer-motion";
+import { LandingPage } from "@/components/LandingPage";
+import { InfoSection } from "@/components/InfoSection";
+import { Curriculum } from "@/components/Curriculum";
+import { Location } from "@/components/Location";
 
 const words = ["Bahasa", "English", "Mandarin"];
 
@@ -38,10 +42,10 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col bg-[#F2D9BB]">
+    <main className="flex min-h-screen flex-col bg-white">
       <nav
         className={`fixed top-0 left-0 w-full flex justify-between items-center p-4 transition-all duration-300 ${
-          isScrolled ? "bg-black/70 backdrop-blur-md py-2" : "bg-black/95 py-2"
+          isScrolled ? "bg-orange-600/70 backdrop-blur-md py-2" : "bg-orange-600/95 py-2"
         } px-[10%] z-[100000]`}
       >
         <ul className="flex gap-6 text-white/80 font-semibold">
@@ -81,11 +85,10 @@ export default function Home() {
       </nav>
 
       {/* Home Section */}
-      <section id="home" className="pt-20 hidden sm:block">
-        <TypewriterEffectSmoothDemo />
+      <section id="home" className="sm:pt-0 pt-10">
+        <LandingPage />
       </section>
 
-      {/* Info Section */}
       <section id="info" className="py-20">
         <div className="text-4xl mx-auto font-normal gap-2 text-black flex flex-col sm:flex-row items-center justify-center mb-8">
           {["Make", "Your", "Child", "Fluent", "in"].map((word, index) => (
@@ -117,9 +120,15 @@ export default function Home() {
             <FlipWords words={words} className="text-orange-500" />
           </motion.div>
         </div>
-
-        <BentoGridDemo />
+          
+        {/* <BentoGridDemo /> */}
       </section>
+
+      <InfoSection />
+
+      <Curriculum/>
+
+      <Location/>
 
       {/* Events Section */}
       <section id="events" className="py-10">
@@ -132,6 +141,26 @@ export default function Home() {
       <section id="contact" className="py-10">
         <ContactForm />
       </section>
+
+      {/* Fixed WhatsApp button */}
+      <a
+        href="https://api.whatsapp.com/send?phone=60187895960&text" // Replace 'yourphonenumber' with your actual WhatsApp number in international format
+        target="_blank"
+        rel="noopener noreferrer"
+        className=" z-[10000] fixed bottom-4 right-4 p-3 bg-orange-600 rounded-full shadow-lg transition-transform transform hover:scale-110"
+      >
+        <svg
+          className="w-12 h-12 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M16.1 15.1c-0.6-0.4-1.1-0.8-1.7-1.1-0.2-0.2-0.4-0.2-0.6-0.1-0.3 0.2-0.6 0.3-0.9 0.5-0.4 0.1-0.8 0.2-1.1 0.3-0.3 0.1-0.5 0.2-0.8 0.2-0.5 0-1-0.1-1.5-0.3-0.4-0.1-0.8-0.3-1.1-0.6-0.4-0.3-0.8-0.7-1.1-1.1-0.2-0.2-0.2-0.4-0.1-0.6 0.2-0.3 0.4-0.6 0.6-0.9 0.2-0.3 0.4-0.7 0.6-1 0.1-0.3 0.2-0.7 0.3-1 0.2-0.5 0.3-1 0.5-1.5 0.2-0.4 0.4-0.7 0.7-1 0.2-0.3 0.4-0.6 0.7-0.8 0.2-0.2 0.5-0.4 0.8-0.5 0.5-0.2 1-0.3 1.5-0.3 0.8 0 1.6 0.3 2.3 0.8 0.6 0.4 1.2 0.9 1.6 1.5 0.3 0.3 0.5 0.7 0.7 1.1 0.3 0.5 0.5 1 0.5 1.5-0.1 0.3-0.1 0.7-0.2 1.1-0.1 0.4-0.3 0.8-0.5 1.2-0.2 0.3-0.5 0.6-0.8 0.9-0.3 0.2-0.7 0.4-1.1 0.6-0.4 0.1-0.8 0.2-1.2 0.3-0.4 0.1-0.7 0.3-1.1 0.3-0.6 0-1.3-0.2-1.9-0.5z"
+          />
+        </svg>
+      </a>
     </main>
   );
 }

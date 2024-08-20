@@ -49,7 +49,7 @@ export function ContactForm() {
                 type="button"
                 onClick={handleWhatsAppClick}
                 variant="outline"
-                className="flex-1"
+                className="flex-1 hover:bg-orange-600/5"
               >
                 <PhoneIcon className="h-5 w-5 mr-2" />
                 WhatsApp
@@ -57,7 +57,7 @@ export function ContactForm() {
               <Button
                 type="button"
                 onClick={handleEmailClick}
-                className="flex-1 bg-[#E6B57B]"
+                className="flex-1 bg-orange-600 hover:bg-orange-600/90"
               >
                 <MailIcon className="h-5 w-5 mr-2" />
                 Email

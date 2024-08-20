@@ -12,7 +12,7 @@ import { LandingPage } from "@/components/LandingPage";
 import { InfoSection } from "@/components/InfoSection";
 import { Curriculum } from "@/components/Curriculum";
 import { Location } from "@/components/Location";
-import { Programs } from "@/components/programs";
+import { Programs } from "@/components/Programs";
 import { FaWhatsapp } from 'react-icons/fa';
 
 const words = ["Bahasa", "English", "Mandarin"];

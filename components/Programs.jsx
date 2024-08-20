@@ -55,7 +55,7 @@ export function Programs() {
             Our Programs
           </h2>
           <p className="max-w-xl mx-auto text-lg md:text-xl text-orange-500">
-            Choose the program that best fits your family's needs.
+            Choose the program that best fits your child's needs.
           </p>
         </div>
 

@@ -44,8 +44,8 @@ export function Programs() {
 
               <div className="relative p-6">
                 <h3 className="text-2xl font-extrabold">{group.title}</h3>
-                <p className="text-sm font-bold text-orange-400">{group.subtitle}</p>
-                <p className="mt-2 text-sm font-semibold text-orange-500 group-hover:text-orange-900">{group.age}</p>
+                <p className="text-sm font-extrabold text-orange-900">{group.subtitle}</p>
+                <p className="mt-2 text-sm font-bold text-orange-900">{group.age}</p>
               </div>
 
               {/* Animated icon */}

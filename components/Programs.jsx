@@ -25,10 +25,10 @@ export function Programs() {
         {/* Age Group Cards */}
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
           {[
-            { title: "Playgroup", subtitle: "Kuai Le Class, 快乐班", age: "Age 3", image: "class1.jpeg" },
-            { title: "Nursery", subtitle: "Xi Yue Class, 喜悦班", age: "Age 4", image: "class2.jpeg" },
-            { title: "K1", subtitle: "Huan Le Class, 欢乐班", age: "Age 5", image: "class3.jpeg" },
-            { title: "K2", subtitle: "Yu Le Class, 愉乐班", age: "Age 6", image: "class4.jpeg" },
+            { title: "Playgroup", subtitle: "Kuai Le Class", translate:"快乐班", age: "Age 3", image: "class1.jpeg" },
+            { title: "Nursery", subtitle: "Xi Yue Class", translate:"喜悦班", age: "Age 4", image: "class2.jpeg" },
+            { title: "K1", subtitle: "Huan Le Class", translate:"欢乐班", age: "Age 5", image: "class3.jpeg" },
+            { title: "K2", subtitle: "Yu Le Class", translate:"愉乐班", age: "Age 6", image: "class4.jpeg" },
           ].map((group, index) => (
             <div
               key={index}
@@ -45,6 +45,7 @@ export function Programs() {
               <div className="relative p-6">
                 <h3 className="text-2xl font-extrabold">{group.title}</h3>
                 <p className="text-sm font-extrabold text-orange-900">{group.subtitle}</p>
+                <p className="text-sm font-extrabold text-orange-900">{group.translate}</p>
                 <p className="mt-2 text-sm font-bold text-orange-900">{group.age}</p>
               </div>
 

@@ -14,7 +14,7 @@ export function Programs() {
       <div className="container grid gap-12 px-6 md:px-12">
         {/* Age Groups Section */}
         <div className="space-y-6 w-full text-center">
-          <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl text-orange-600">
+          <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-orange-600">
             Our Age Groups
           </h2>
           <p className="text-lg md:text-xl text-orange-500">
@@ -25,20 +25,29 @@ export function Programs() {
         {/* Age Group Cards */}
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
           {[
-            { title: "Playgroup", subtitle: "Kuai Le Class, 快乐班", age: "Age 3" },
-            { title: "Nursery", subtitle: "Xi Yue Class, 喜悦班", age: "Age 4" },
-            { title: "K1", subtitle: "Huan Le Class, 欢乐班", age: "Age 5" },
-            { title: "K2", subtitle: "Yu Le Class, 愉乐班", age: "Age 6" },
+            { title: "Playgroup", subtitle: "Kuai Le Class, 快乐班", age: "Age 3", image: "class1.jpeg" },
+            { title: "Nursery", subtitle: "Xi Yue Class, 喜悦班", age: "Age 4", image: "class2.jpeg" },
+            { title: "K1", subtitle: "Huan Le Class, 欢乐班", age: "Age 5", image: "class3.jpeg" },
+            { title: "K2", subtitle: "Yu Le Class, 愉乐班", age: "Age 6", image: "class4.jpeg" },
           ].map((group, index) => (
             <div
               key={index}
-              className="group relative rounded-lg border border-orange-200 bg-white p-6 shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:border-orange-600 hover:bg-orange-100 hover:text-orange-900"
+              className="group relative rounded-lg border border-orange-200 shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:border-orange-600 hover:text-orange-900"
+              style={{
+                backgroundImage: `url(${group.image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
             >
-              <div className="flex flex-col items-start justify-between">
+              {/* Full white overlay with some opacity */}
+              <div className="absolute inset-0 bg-white bg-opacity-60 rounded-lg"></div>
+
+              <div className="relative p-6">
                 <h3 className="text-2xl font-extrabold">{group.title}</h3>
-                <p className="text-sm font-medium text-orange-400">{group.subtitle}</p>
-                <p className="mt-2 text-sm text-orange-500 group-hover:text-orange-900">{group.age}</p>
+                <p className="text-sm font-bold text-orange-400">{group.subtitle}</p>
+                <p className="mt-2 text-sm font-semibold text-orange-500 group-hover:text-orange-900">{group.age}</p>
               </div>
+
               {/* Animated icon */}
               <div className="absolute bottom-2 right-2 text-orange-400 group-hover:text-orange-600 transition-colors duration-300">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -49,9 +58,11 @@ export function Programs() {
           ))}
         </div>
 
+
+
         {/* Programs Section */}
         <div className="space-y-6 w-full text-center mt-12">
-          <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl text-orange-600">
+          <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-orange-600">
             Our Programs
           </h2>
           <p className="max-w-xl mx-auto text-lg md:text-xl text-orange-500">
@@ -65,7 +76,7 @@ export function Programs() {
             { title: "Half Day (半天)", time: "9:00 AM - 1:30 PM", description: "No evening class" },
             { title: "Half Day Extend (加强班)", time: "9:00 AM - 4:15 PM", description: "Includes evening class" },
             { title: "Full Day (整天)", time: "7:00 AM - 6:30 PM", description: "Includes evening class" },
-            
+
           ].map((program, index) => (
             <div
               key={index}
